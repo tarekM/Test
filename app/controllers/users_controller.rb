@@ -5,7 +5,7 @@ class UsersController < ApplicationController
 	SUCCESS = 1
 	NO_RECORD = -2
 
-	#before_filter :authenticate_user!
+	before_filter :authenticate_user!
 
 	def index
   		@users = User.all
